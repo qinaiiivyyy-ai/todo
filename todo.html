@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tugas Online</title>
+
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+  <h1>Daftar Tugas Online</h1>
+<p id="info">Memuat...</p>
+
+<div id="filter">
+  <button onclick="filterTugas('semua')">Semua</button>
+  <button onclick="filterTugas('selesai')">Selesai</button>
+  <button onclick="filterTugas('belum')">Belum Selesai</button>
+</div>
+<div id="formTambah">
+  <h2>Tambah Tugas Baru</h2>
+
+  <input
+    type="text"
+    id="inputTugas"
+    placeholder="Masukkan tugas baru"
+  >
+
+  <button id="btnTambah">Tambah Tugas</button>
+</div>
+
+<div id="daftarTugas"></div>
+
+  <script src="todo.js"></script>
+</body>
+</html>

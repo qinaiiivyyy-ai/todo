@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef4fb;
+  color: #24364b;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #315b87;
+  margin-bottom: 12px;
+}
+
+#info {
+  text-align: center;
+  color: #8293a8;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Filter */
+#filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 10px;
+  background: #dce9f7;
+  color: #315b87;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #315b87;
+  color: white;
+}
+
+/* Form tambah tugas */
+#formTambah {
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(49, 91, 135, 0.07);
+}
+
+#formTambah h2 {
+  font-size: 19px;
+  margin-bottom: 15px;
+  color: #315b87;
+}
+
+#inputTugas {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8e3ef;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+#inputTugas:focus {
+  border-color: #6b9bc9;
+}
+
+#btnTambah {
+  width: 100%;
+  background: #477eaf;
+  color: white;
+}
+
+#btnTambah:hover {
+  background: #315b87;
+}
+
+/* Daftar tugas */
+#daftarTugas {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.tugas {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #e3ebf4;
+  box-shadow: 0 4px 12px rgba(49, 91, 135, 0.04);
+  transition: 0.2s;
+}
+
+.tugas:hover {
+  transform: translateY(-2px);
+}
+
+.tugas h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #344b65;
+}
+
+.tugas p {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.selesai {
+  color: #299b75;
+}
+
+.belum {
+  color: #d69a38;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  body {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  #filter button {
+    flex: 1;
+    padding: 10px;
+    font-size: 12px;
+  }
+}
